@@ -25,8 +25,8 @@ export const meta: MetaFunction = () => {
 }
 
 export const loader = () => {
-  const apiKey = "c5712074-2b62-4fa2-8bd7-e7f98d8702bf"
-  const appId = "b863c797-91dd-4e19-939b-3fa2ccf28bf6"
+  const apiKey = process.env.API_KEY
+  const appId = process.env.APP_ID
 
   if (!apiKey || !appId) {
     throw new Error('Missing React Bricks credentials in .env file')
