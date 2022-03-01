@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/react-bricks/frontend/react-bricks-frontend.esm.js"],
+  "sourcesContent": ["import\"intersection-observer\";export{F as File,I as Image,L as Link,D as PageViewer,P as Plain,z as ReactBricks,R as ReactBricksContext,w as Repeater,s as RichText,v as RichTextExt,T as Text,o as blockPluginConstructor,l as cleanPage,M as fetchPage,N as fetchPages,O as fetchTags,Q as getPagePlainText,p as markPluginConstructor,r as plugins,t as types,x as useAdminContext,k as usePage,G as usePagePublic,h as usePageValues,u as usePages,H as usePagesPublic,K as useReactBricksContext,J as useTagsPublic,y as useVisualEdit}from\"../react-bricks-67025070.esm.js\";import\"react\";import\"classnames\";import\"react-query\";import\"react-icons/fi\";import\"axios\";\n//# sourceMappingURL=react-bricks-frontend.esm.js.map\n"],
+  "mappings": ";;;;;;;;;;;AAAA;AAAkjB,mBAAM;AAAQ,wBAAM;AAAwD,mBAAM;",
+  "names": []
+}
