@@ -8,6 +8,7 @@ import {
   useNavigate,
   useLoaderData,
 } from 'remix'
+import 'dotenv/config'
 import type { MetaFunction } from 'remix'
 import { ReactBricks } from 'react-bricks/frontend'
 import config from './react-bricks/config'
