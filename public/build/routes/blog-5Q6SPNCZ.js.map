@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/Users/md/github-repos/remixbricks/app/routes/blog.tsx?browser", "../../../app/routes/blog.tsx"],
-  "sourcesContent": ["export { ErrorBoundary, default, meta } from \"/Users/md/github-repos/remixbricks/app/routes/blog.tsx\";", "import { Outlet } from 'remix'\nimport type { MetaFunction } from 'remix'\nimport Layout from '~/components/Layout'\nimport ErrorMessage from '~/components/ErrorMessage'\n\nexport default function Blog() {\n  return (\n    <Layout>\n      <Outlet />\n    </Layout>\n  )\n}\n\nexport const meta: MetaFunction = () => {\n  return {\n    title: 'Blog',\n  }\n}\n\nexport function ErrorBoundary({ error }: { error: Error }) {\n  return (\n    <Layout>\n      <ErrorMessage error={error} />\n    </Layout>\n  )\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;;AAAA;;;ACAA;AAKe,gBAAgB;AAC7B,SACE,oCAAC,gBAAD,MACE,oCAAC,QAAD;AAAA;AAKC,IAAM,OAAqB,MAAM;AACtC,SAAO;AAAA,IACL,OAAO;AAAA;AAAA;AAIJ,uBAAuB,EAAE,SAA2B;AACzD,SACE,oCAAC,gBAAD,MACE,oCAAC,sBAAD;AAAA,IAAc;AAAA;AAAA;",
-  "names": []
-}

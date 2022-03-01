@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/md/github-repos/my-remix-app/app/routes/admin/index.tsx?browser", "../../../../app/routes/admin/index.tsx"],
+  "sourcesContent": ["export { default, meta } from \"/Users/md/github-repos/my-remix-app/app/routes/admin/index.tsx\";", "import React from 'react'\nimport type { MetaFunction } from 'remix'\nimport { Admin, Login } from 'react-bricks'\n\nexport const meta: MetaFunction = () => {\n  return {\n    title: 'React Bricks Login',\n  }\n}\n\nconst AdminLogin: React.FC = () => {\n  return (\n    <Admin isLogin>\n      <Login />\n    </Admin>\n  )\n}\n\nexport default AdminLogin\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;;;ACAA;AAAA,mBAAkB;AAIX,IAAM,OAAqB,MAAM;AACtC,SAAO;AAAA,IACL,OAAO;AAAA;AAAA;AAIX,IAAM,aAAuB,MAAM;AACjC,SACE,mDAAC,IAAD;AAAA,IAAO,SAAO;AAAA,KACZ,mDAAC,IAAD;AAAA;AAKN,IAAO,gBAAQ;",
+  "names": []
+}

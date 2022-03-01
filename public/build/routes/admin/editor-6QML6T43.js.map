@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/md/github-repos/remixbricks/app/routes/admin/editor.tsx?browser", "../../../../app/routes/admin/editor.tsx"],
+  "sourcesContent": ["export { default, meta } from \"/Users/md/github-repos/remixbricks/app/routes/admin/editor.tsx\";", "import React from 'react'\nimport type { MetaFunction } from 'remix'\nimport { Admin, Editor } from 'react-bricks'\n\nexport const meta: MetaFunction = () => {\n  return {\n    title: 'React Bricks Editor',\n  }\n}\n\nconst AdminEditor: React.FC = () => {\n  return (\n    <Admin>\n      <Editor />\n    </Admin>\n  )\n}\n\nexport default AdminEditor\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;;;ACAA;AAAA,mBAAkB;AAIX,IAAM,OAAqB,MAAM;AACtC,SAAO;AAAA,IACL,OAAO;AAAA;AAAA;AAIX,IAAM,cAAwB,MAAM;AAClC,SACE,mDAAC,IAAD,MACE,mDAAC,IAAD;AAAA;AAKN,IAAO,iBAAQ;",
+  "names": []
+}

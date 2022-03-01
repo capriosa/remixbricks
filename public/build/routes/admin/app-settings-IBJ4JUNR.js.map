@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/md/github-repos/my-remix-app/app/routes/admin/app-settings.tsx?browser", "../../../../app/routes/admin/app-settings.tsx"],
+  "sourcesContent": ["export { default, meta } from \"/Users/md/github-repos/my-remix-app/app/routes/admin/app-settings.tsx\";", "import React from 'react'\nimport type { MetaFunction } from 'remix'\nimport { Admin, AppSettings } from 'react-bricks'\n\nexport const meta: MetaFunction = () => {\n  return {\n    title: 'React Bricks App Settings',\n  }\n}\n\nconst AdminAppSettings: React.FC = () => {\n  return (\n    <Admin>\n      <AppSettings />\n    </Admin>\n  )\n}\n\nexport default AdminAppSettings\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;;;ACAA;AAAA,mBAAkB;AAIX,IAAM,OAAqB,MAAM;AACtC,SAAO;AAAA,IACL,OAAO;AAAA;AAAA;AAIX,IAAM,mBAA6B,MAAM;AACvC,SACE,mDAAC,IAAD,MACE,mDAAC,IAAD;AAAA;AAKN,IAAO,uBAAQ;",
+  "names": []
+}

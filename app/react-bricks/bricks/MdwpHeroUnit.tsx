@@ -21,30 +21,31 @@ interface HeroUnitProps {
 //=============================
 // Component to be rendered
 //=============================
-const MdwpHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor, paragraphColor, headlineAlignment, paragraphAlignment,fullHeight }) => {
+const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor, paragraphColor, headlineAlignment, paragraphAlignment,fullHeight }) => {
   return (
-    
+     
     <section 
-    
-    
     style={{backgroundImage: `url(${background.src})`}} 
     
-
     className={`w-full flex items-center px-6 pb-12 antialiased bg-cover  
     
-    ${
-      bgColor.className
-    }
+    
     ${
       fullHeight ? 'min-h-screen' : ''
     }`}>
+      
   
+    
   
+
+    
     <div className={`mx-auto max-w-7xl `}>
     <div className="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center">
         <Text
           renderBlock={(props) => (
-            <h1 className={`text-5xl font-extrabold leading-10 tracking-tight text-${headlineAlignment} sm:leading-none md:text-6xl lg:text-7xl
+            <h1 className={`text-5xl font-extrabold leading-10 tracking-tight text-${headlineAlignment} ${
+              bgColor.className
+            } sm:leading-none md:text-6xl lg:text-7xl
             ${color?.className}
             `}>
               {props.children}
@@ -83,7 +84,7 @@ const MdwpHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor, 
 //=============================
 // Brick Schema
 //=============================
-MdwpHeroUnit.schema = {
+MdwpBgHeroUnit.schema = {
   name: 'mdwp-hero-unit',
   label:'mdwp Hero Unit',
   getDefaultProps: () => ({
@@ -155,4 +156,4 @@ MdwpHeroUnit.schema = {
   ],
 }
 
-export default MdwpHeroUnit
+export default MdwpBgHeroUnit
