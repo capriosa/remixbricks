@@ -3,6 +3,10 @@
   functions = "netlify/functions"
   publish = "public"
 
+[context.production.environment]
+  API_KEY=c5712074-2b62-4fa2-8bd7-e7f98d8702bf
+  APP_ID=b863c797-91dd-4e19-939b-3fa2ccf28bf6
+
 [dev]
   command = "remix watch"
   port = 3000
