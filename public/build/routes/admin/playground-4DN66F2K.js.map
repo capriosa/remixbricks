@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/Users/md/github-repos/my-remix-app/app/routes/admin/playground.tsx?browser", "../../../../app/routes/admin/playground.tsx"],
-  "sourcesContent": ["export { default, meta } from \"/Users/md/github-repos/my-remix-app/app/routes/admin/playground.tsx\";", "import React from 'react'\nimport type { MetaFunction } from 'remix'\nimport { Admin, Playground } from 'react-bricks'\n\nexport const meta: MetaFunction = () => {\n  return {\n    title: 'React Bricks Playground',\n  }\n}\n\nconst AdminPlayground: React.FC = () => {\n  return (\n    <Admin>\n      <Playground />\n    </Admin>\n  )\n}\n\nexport default AdminPlayground\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;;;ACAA;AAAA,mBAAkB;AAIX,IAAM,OAAqB,MAAM;AACtC,SAAO;AAAA,IACL,OAAO;AAAA;AAAA;AAIX,IAAM,kBAA4B,MAAM;AACtC,SACE,mDAAC,IAAD,MACE,mDAAC,IAAD;AAAA;AAKN,IAAO,qBAAQ;",
-  "names": []
-}

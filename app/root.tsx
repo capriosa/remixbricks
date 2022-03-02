@@ -8,7 +8,6 @@ import {
   useNavigate,
   useLoaderData,
 } from 'remix'
-import 'dotenv/config'
 import type { MetaFunction } from 'remix'
 import { ReactBricks } from 'react-bricks/frontend'
 import config from './react-bricks/config'
@@ -25,8 +24,8 @@ export const meta: MetaFunction = () => {
 }
 
 export const loader = () => {
-  const apiKey = process.env.API_KEY
-  const appId = process.env.APP_ID
+  const apiKey = process.env.API_KEY || "c5712074-2b62-4fa2-8bd7-e7f98d8702bf"
+  const appId = process.env.APP_ID || "b863c797-91dd-4e19-939b-3fa2ccf28bf6"
 
   if (!apiKey || !appId) {
     throw new Error('Missing React Bricks credentials in .env file')

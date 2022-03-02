@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/components/ErrorMessage.tsx"],
-  "sourcesContent": ["interface ErrorMessageProps {\n  error: Error\n}\n\nconst ErrorMessage: React.FC<ErrorMessageProps> = ({ error }) => {\n  return (\n    <div className=\"container mx-auto max-w-5xl px-6 my-12\">\n      <div className=\"bg-red-50 py-3 px-6 border-2 border-red-200 flex flex-col items-center\">\n        <h2 className=\"text-xl font-extrabold mb-2\">Something went wrong</h2>\n        <p>Error: {error.message}</p>\n      </div>\n    </div>\n  )\n}\n\nexport default ErrorMessage\n"],
-  "mappings": ";;;;;;AAAA;AAIA,IAAM,eAA4C,CAAC,EAAE,YAAY;AAC/D,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,MAAD;AAAA,IAAI,WAAU;AAAA,KAA8B,yBAC5C,oCAAC,KAAD,MAAG,WAAQ,MAAM;AAAA;AAMzB,IAAO,uBAAQ;",
-  "names": []
-}
