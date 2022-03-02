@@ -1,6 +1,7 @@
 module.exports = {
   content: ['./app/**/*.{ts,tsx}', './node_modules/react-bricks-ui/**/*.js'],
   darkMode: 'class',
+  mode: 'jit',
   theme: {
     colors: {
       transparent: 'transparent',

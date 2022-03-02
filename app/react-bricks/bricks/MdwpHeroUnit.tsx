@@ -25,7 +25,7 @@ const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor
   return (
      
     <section 
-    style={{backgroundImage: `url(${background.src})`}} 
+    style={{backgroundImage: `url(${background?.src})`}} 
     
     className={`w-full flex items-center px-6 pb-12 antialiased bg-cover  
     
@@ -40,7 +40,7 @@ const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor
           renderBlock={(props) => (
             <h1 className={`text-5xl font-extrabold leading-10 tracking-tight text-${headlineAlignment} 
             ${
-              bgColor.className
+              bgColor?.className
             } sm:leading-none md:text-6xl lg:text-7xl
             ${color?.className}
             `}>
@@ -78,11 +78,9 @@ const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor
         <div className="flex flex-col items-center mt-12 text-center">
                 <span className="relative inline-flex w-full md:w-auto">
                     <a href="#_" type="button" className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-gray bg-orange border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
-                        Purchase Now
+                        More Info
                     </a>
-                    <span className="absolute top-0 right-0 px-2 py-1 -mt-12 -mr-6 text-xs font-medium leading-tight text-white bg-light-brown rounded-full">only $15/mo</span>
-                </span>
-                <a href="#" className="mt-12 text-sm text-orange">Learn More</a>
+                    </span>
             </div>
         </div>
       
@@ -100,6 +98,7 @@ MdwpBgHeroUnit.schema = {
   getDefaultProps: () => ({
     Color: { color: '#000000', className: 'text-black' },
     ParagraphColor: { color: '#ffffff', className: 'text-white' },
+    Background: {className: 'br-gray'},
     BgColor: { color: '#ffffff', className: 'bg-white' },
     HeadlineAlignment: { className: 'text-center' },
     ParagraphAlignment: { className: 'text-center' },
