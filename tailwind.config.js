@@ -2,7 +2,15 @@ module.exports = {
   content: ['./app/**/*.{ts,tsx}', './node_modules/react-bricks-ui/**/*.js'],
   darkMode: 'class',
   mode: 'jit',
+  purge: [
+
+    './public/**/*.html',
+
+    './app/**/*.{js,jsx,ts,tsx}',
+
+  ],
   theme: {
+    extends: {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -12,7 +20,7 @@ module.exports = {
       'red': '#ae1e2c',
       'orange': '#ca383b',
     },
-    extend: {},
+  },
   },
   variants: {},
   plugins: [],
