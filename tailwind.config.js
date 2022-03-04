@@ -2,15 +2,9 @@ module.exports = {
   content: ['./app/**/*.{ts,tsx}', './node_modules/react-bricks-ui/**/*.js'],
   darkMode: 'class',
   mode: 'jit',
-  purge: [
-
-    './public/**/*.html',
-
-    './app/**/*.{js,jsx,ts,tsx}',
-
-  ],
+  
   theme: {
-    extends: {
+    extend: {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

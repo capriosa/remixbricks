@@ -1,6 +1,8 @@
 import React, { Children } from 'react'
 import { Text, RichText, types } from 'react-bricks/frontend'
 import { Colors, BgColors, ParagraphColors, HeadlineAlignment, ParagraphAlignment } from '../utils/colors'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 //=============================
 // Local Types
@@ -21,10 +23,14 @@ interface HeroUnitProps {
 //=============================
 // Component to be rendered
 //=============================
-const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor, paragraphColor, headlineAlignment, paragraphAlignment,fullHeight }) => {
+const Slide: types.Brick<HeroUnitProps> = ({ 
+  background, color, bgColor, paragraphColor, headlineAlignment, paragraphAlignment,fullHeight, ...rest }) => {
+  
   return (
      
-    <section 
+    <SwiperSlide {...rest}>
+      
+      <section 
     style={{backgroundImage: `url(${background?.src})`}} 
     
     className={`w-full flex items-center px-6 pb-12 antialiased bg-cover  
@@ -32,8 +38,6 @@ const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor
     ${
       fullHeight ? 'min-h-screen' : ''
     }`}>
-      
-  
     <div className={`mx-auto max-w-7xl `}>
     <div className="container max-w-lg px-4 py-32 mx-auto md:max-w-none md:text-center">
         <Text
@@ -75,26 +79,27 @@ const MdwpBgHeroUnit: types.Brick<HeroUnitProps> = ({ background, color, bgColor
           )}
         />
         </div>
-        <div className="flex flex-col items-center mt-12 text-center">
+        <div className="flex flex-col items-center mb-12 -mt-12 text-center">
                 <span className="relative inline-flex w-full md:w-auto">
-                    <a href="#_" type="button" className="inline-flex hover:bg-orange items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-gray bg-orange border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
+                    <a href="#_" type="button" className="inline-flex hover:bg-orange items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-gray bg-orange border border-transparent rounded-full md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-2">
                         More Info
                     </a>
                     </span>
             </div>
         </div>
       
-      
-    </section>
+     </section> 
+    </SwiperSlide>
   )
 }
 
 //=============================
 // Brick Schema
 //=============================
-MdwpBgHeroUnit.schema = {
-  name: 'mdwp-hero-unit',
-  label:'mdwp Hero Unit',
+Slide.schema = {
+  name: 'slide',
+  label:'mdwp Slide',
+  hideFromAddMenu: true,
   getDefaultProps: () => ({
     Color: { color: '#000000', className: 'text-black' },
     ParagraphColor: { color: '#ffffff', className: 'text-white' },
@@ -165,4 +170,15 @@ MdwpBgHeroUnit.schema = {
   ],
 }
 
-export default MdwpBgHeroUnit
+const sliderSettings = {
+  
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+
+  
+}
+
+export default Slide
