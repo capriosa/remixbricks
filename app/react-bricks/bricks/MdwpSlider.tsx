@@ -11,10 +11,10 @@ const mdwpSlider: types.Brick = () => {
     
 <div className='swiper'>
 <Swiper
-      spaceBetween={50}
+      effect='fade'
       slidesPerView={1}
       speed={400}
-      loop={true}
+      
       
 >
       <div className='swiper-wrapper'>
